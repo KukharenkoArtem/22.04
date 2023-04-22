@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>JS Challenge: DOM, CONDITIONALS, LOGIC</title>
+    <meta charset="UTF-8">
+	</head>
+	<body>
+	<input type="text" id="inp">
+	<button onclick="checkText()">Check Text</button>
+	<script>
+		function checkText() {
+			if (document.getElementById("inp").value == ""){
+                alert ("Error! An input is empty.")
+            }
+            if (document.getElementById("inp").value == "hello"){
+                document.body.style.background="lightgreen";
+            }
+            if (document.getElementById("inp").value == "world"){
+                document.body.style.background="lightblue";
+            }
+            else{
+                document.body.style.background="#FFCCCB";
+            }
+		}
+	</script>
+	</body>
+</html>
